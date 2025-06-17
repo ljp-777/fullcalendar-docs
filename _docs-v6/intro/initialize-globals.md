@@ -1,6 +1,8 @@
 ---
-title: Initialize with Script Tags
-description: Use pre-built bundles and HTML script tags
+title: 使用Script标签初始化
+description: 使用预构建包和HTML的script😊
+# title: Initialize with Script Tags
+# description: Use pre-built bundles and HTML script tags
 ---
 
 It's possible to manually include the necessary `<script>` tags in the head of your HTML page and then initialize a calendar via browser globals. Leverage one of FullCalendar's prebuilt bundles or include individual plugins
