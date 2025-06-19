@@ -5,18 +5,21 @@ description: 使用预构建包和HTML的script😊
 # description: Use pre-built bundles and HTML script tags
 ---
 
-It's possible to manually include the necessary `<script>` tags in the head of your HTML page and then initialize a calendar via browser globals. Leverage one of FullCalendar's prebuilt bundles or include individual plugins
+你可以在HTML的头部手动引入必要的`<script>`标签，然后使用浏览器的全局变量进行初始化。利用FullCalendar的构建包或单独包含插件之一。
+<!--It's possible to manually include the necessary `<script>` tags in the head of your HTML page and then initialize a calendar via browser globals. Leverage one of FullCalendar's prebuilt bundles or include individual plugins-->
 
+## 标准构建包
+<!--## Standard Bundle-->
 
-## Standard Bundle
-
-First, obtain the standard `fullcalendar` bundle in one of the following ways:
+首先，通过以下的几种方式获取`fullcalendar`的标准构建包
+<!--First, obtain the standard `fullcalendar` bundle in one of the following ways:-->
 
 - **Download**: <a href='{{ site.fullcalendar_repo }}/releases/download/v{{ site.data.latest-releases.v6 }}/fullcalendar-{{ site.data.latest-releases.v6 }}.zip'>fullcalendar-{{ site.data.latest-releases.v6 }}.zip</a>
 - **CDN:** [jsdelivr](https://www.jsdelivr.com/package/npm/fullcalendar?version={{ site.data.latest-releases.v6 }})
 - **NPM:** `npm install fullcalendar`
 
-Then, write the following initialization code:
+然后，编写如下的初始化代码：
+<!--Then, write the following initialization code:-->
 
 ```html
 <!DOCTYPE html>
@@ -41,8 +44,8 @@ Then, write the following initialization code:
   </body>
 </html>
 ```
-
-[View a runnable example &raquo;](initialize-globals-demo)
+[查看可运行的例子 &raquo;](initialize-globals-demo)
+<!--[View a runnable example &raquo;](initialize-globals-demo)-->
 
 The `fullcalendar` bundle's `index.global(.min).js` file includes the following packages:
 
