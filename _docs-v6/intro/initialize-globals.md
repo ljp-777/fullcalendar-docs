@@ -47,25 +47,28 @@ description: 使用预构建包和HTML的script😊
 [查看可运行的例子 &raquo;](initialize-globals-demo)
 <!--[View a runnable example &raquo;](initialize-globals-demo)-->
 
-The `fullcalendar` bundle's `index.global(.min).js` file includes the following packages:
+`fullcalendar`构建包的`index.global(.min).js`文件包含以下的包：
+<!-- The `fullcalendar` bundle's `index.global(.min).js` file includes the following packages:-->
 
 - `@fullcalendar/core`
-- `@fullcalendar/interaction` (for [date selecting](date-clicking-selecting), [event dragging & resizing](event-dragging-resizing))
-- `@fullcalendar/daygrid` (for [month](month-view) and [dayGrid](daygrid-view) views)
-- `@fullcalendar/timegrid` (for [timeGrid](timegrid-view) views)
-- `@fullcalendar/list` (for [list views](list-view))
-- `@fullcalendar/multimonth` (for [multi-month views](multimonth-grid))
+- `@fullcalendar/interaction` (功能： [日期选择](date-clicking-selecting), [拖拽事件，大小变化事件](event-dragging-resizing))
+- `@fullcalendar/daygrid` (功能：[月视图](month-view) 和 [日视图](daygrid-view))
+- `@fullcalendar/timegrid` (功能： [timeGrid](timegrid-view) views)
+- `@fullcalendar/list` (功能： [list views](list-view))
+- `@fullcalendar/multimonth` (功能： [multi-month views](multimonth-grid))
 
 
-## Premium Bundle
+## 高级构建包
 
-First, obtain the premium `fullcalendar-scheduler` bundle in one of the following ways:
+首先，通过如下的集中供暖方式获取`fullcalendar-scheduler`高级构建包
+<!--First, obtain the premium `fullcalendar-scheduler` bundle in one of the following ways:-->
 
 - **Download**: <a href='{{ site.fullcalendar_premium_repo }}/releases/download/v{{ site.data.latest-releases.v6 }}/fullcalendar-scheduler-{{ site.data.latest-releases.v6 }}.zip'>fullcalendar-scheduler-{{ site.data.latest-releases.v6 }}.zip</a>
 - **CDN:** [jsdelivr](https://www.jsdelivr.com/package/npm/fullcalendar-scheduler?version={{ site.data.latest-releases.v6 }})
 - **NPM:** `npm install fullcalendar-scheduler`
 
-Then, write the following initialization code:
+然后，编写如下的初始化代码：
+<!--Then, write the following initialization code:-->
 
 ```html
 <!DOCTYPE html>
@@ -90,12 +93,14 @@ Then, write the following initialization code:
   </body>
 </html>
 ```
+[查看可运行的例子 &raquo;](timeline-standard-view-demoo)
+<!--[View a runnable example &raquo;](timeline-standard-view-demo)-->
 
-[View a runnable example &raquo;](timeline-standard-view-demo)
+你不需要引入`fullcalendar-scheduler`构建包跟`fullcalendar`构建包。`fullcalendar-scheduler`构建包含了所有内容。
+<!--You won't need to include the `fullcalendar-scheduler` bundle AND the `fullcalendar` bundle. The `fullcalendar-scheduler` bundle includes everything.-->
 
-You won't need to include the `fullcalendar-scheduler` bundle AND the `fullcalendar` bundle. The `fullcalendar-scheduler` bundle includes everything.
-
-The `fullcalendar-scheduler` bundle's `index.global(.min).js` file includes the following packages:
+`fullcalendar-scheduler`构建包的`index.global(.min).js`文件包含以下的包：
+<!--The `fullcalendar-scheduler` bundle's `index.global(.min).js` file includes the following packages:-->
 
 - `@fullcalendar/core`
 - `@fullcalendar/interaction` (for [date selecting](date-clicking-selecting), [event dragging & resizing](event-dragging-resizing))
@@ -112,9 +117,11 @@ The `fullcalendar-scheduler` bundle's `index.global(.min).js` file includes the 
 - `@fullcalendar/resource-timeline` ([more info](timeline-view))
 
 
-## Individual Plugins
+## 单独插件
+<!--## Individual Plugins-->
 
-You can also include `<script>` tags for individual plugins. Example:
+你也可以通过引入`<script>`标签来单独引入插件，例如：
+<!--You can also include `<script>` tags for individual plugins. Example:-->
 
 ```html
 <!DOCTYPE html>
