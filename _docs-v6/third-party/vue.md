@@ -1,17 +1,21 @@
 ---
-title: Vue Component
+title: Vue组件
 title_for_landing: Vue
 ---
 
-FullCalendar seamlessly integrates with the [Vue] JavaScript framework. It provides a component that exactly matches the functionality of FullCalendar's standard API.
+FullCalendar跟Javascript的[Vue]框架完美适配。它提供了一个完美适配FullCalendar标准API的组件。
+<!--FullCalendar seamlessly integrates with the [Vue] JavaScript framework. It provides a component that exactly matches the functionality of FullCalendar's standard API.-->
 
-This package is released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
+这个包是基于MIT许可证发布的，与FullCalendar标准版本使用的是相同的许可证。有用的链接：
+<!--This package is released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:-->
 
-- [Browse the Github repo]({{ site.fullcalendar_vue_repo }}) (please star it!)
-- [Bug report instructions](/reporting-bugs)
-- Example projects:
-  - [Vue 2 example](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2) (uses [Webpack] and [css-loader]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue2)
-  - [Vue 3 example](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue3) (uses [Vite]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue3)
+- [浏览Github仓库]({{ site.fullcalendar_vue_repo }}) (老铁点点关注!)
+<!--- [Browse the Github repo]({{ site.fullcalendar_vue_repo }}) (老铁点点关注!)-->
+- [错误报告说明](/reporting-bugs)
+<!--- [Bug report instructions](/reporting-bugs)-->
+- 示例项目:
+  - [Vue 2 示例](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2) (使用 [Webpack] 和 [css-loader]) - [在线运行](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue2)
+  - [Vue 3 示例](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue3) (使用 [Vite]) - [在线运行](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue3)
 
 This guide does not go into depth about initializing a Vue project. Please consult the aforementioned example/runnable projects for that.
 
