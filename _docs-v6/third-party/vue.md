@@ -17,11 +17,14 @@ FullCalendar跟Javascript的[Vue]框架完美适配。它提供了一个完美�
   - [Vue 2 示例](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2) (使用 [Webpack] 和 [css-loader]) - [在线运行](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue2)
   - [Vue 3 示例](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue3) (使用 [Vite]) - [在线运行](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue3)
 
-This guide does not go into depth about initializing a Vue project. Please consult the aforementioned example/runnable projects for that.
+这份指南不会深入的介绍如何初始化Vue项目。如想了解，请查看上述的示例/可运行的项目。
+<!--This guide does not go into depth about initializing a Vue project. Please consult the aforementioned example/runnable projects for that.-->
 
-The first step is to install the FullCalendar-related dependencies. You'll need FullCalendar core, the Vue adapter, and any plugins you plan to use.
+第一步是安装FullCalendar相关依赖。你需要FullCalendar核心包，Vue包，还有其他计划使用的插件。
+<!--The first step is to install the FullCalendar-related dependencies. You'll need FullCalendar core, the Vue adapter, and any plugins you plan to use.-->
 
-If using **Vue 2**:
+如果在 **Vue 2**中使用：
+<!--If using **Vue 2**:-->
 
 ```bash
 npm install --save \
@@ -29,17 +32,19 @@ npm install --save \
   @fullcalendar/vue
 ```
 
-If using **Vue 3**:
+如果在 **Vue 3**中使用：
+<!--If using **Vue 3**:-->
 
 ```bash
 npm install --save \
   @fullcalendar/core \
   @fullcalendar/vue3
 ```
+然后安装任何额外的FullCalendar插件，像 `@fullcalendar/daygrid`
+<!--Then install any additional FullCalendar plugins like `@fullcalendar/daygrid`-->
 
-Then install any additional FullCalendar plugins like `@fullcalendar/daygrid`
-
-You may then begin to write a parent component that leverages the `<FullCalendar>` component:
+你可以利用`<FullCalendar>`组件，开始写一个父组件：
+<!--You may then begin to write a parent component that leverages the `<FullCalendar>` component:-->
 
 ```html
 <script>
@@ -49,7 +54,7 @@ import interactionPlugin from '@fullcalendar/interaction'
 
 export default {
   components: {
-    FullCalendar // make the <FullCalendar> tag available
+    FullCalendar // 注册组件，使<FullCalendar>标签可用
   },
   data() {
     return {
@@ -66,8 +71,7 @@ export default {
 </template>
 ```
 
-
-## Props and Emitted Events
+## Props and Emitted 事件
 
 Vue has the concept of "props" (via `v-bind` or `:`) versus "events" (via `v-on` or `@`). For the FullCalendar connector, there is no distinction between props and events. Everything is passed into the master `options` object as key-value pairs. Here is an example that demonstrates passing in an `events` array and a `dateClick` handler:
 
