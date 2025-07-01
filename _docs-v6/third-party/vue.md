@@ -72,8 +72,8 @@ export default {
 ```
 
 ## Props and Emitted 事件
-
-Vue has the concept of "props" (via `v-bind` or `:`) versus "events" (via `v-on` or `@`). For the FullCalendar connector, there is no distinction between props and events. Everything is passed into the master `options` object as key-value pairs. Here is an example that demonstrates passing in an `events` array and a `dateClick` handler:
+Vue有"props"（通过`v-bind`或者`:`传递），"events"（通过`v-on`或者`@`传递）的概念。对于FullCalendar连接器，没有props跟events的区别。所有内容都作为键值对形式传递到主`options`对象中。这里有一个示例，演示了如何传入一个`events`数组和一个`dateClick`事件处理函数：
+<!--Vue has the concept of "props" (via `v-bind` or `:`) versus "events" (via `v-on` or `@`). For the FullCalendar connector, there is no distinction between props and events. Everything is passed into the master `options` object as key-value pairs. Here is an example that demonstrates passing in an `events` array and a `dateClick` handler:-->
 
 ```html
 <script>
@@ -111,9 +111,10 @@ export default {
 ```
 
 
-## Modifying Options
+## 修改选项
 
-You can modify your calendar's options after initialization by reassigning them within the options object. This is an example of changing the `weekends` options:
+你可以在初始化之后，通过重新设置`object`选项来修改日历配置项。以下是一个修改`weekends`选项的示例：
+<!--You can modify your calendar's options after initialization by reassigning them within the options object. This is an example of changing the `weekends` options:-->
 
 ```html
 <script>
@@ -148,9 +149,9 @@ export default {
 ```
 
 
-## Slot Templates
-
-[Slot templates](https://vuejs.org/guide/components/slots.html#slot-content-and-outlet) can be passed to FullCalendar components. They accepts slots for all [content-injection](content-injection) settings such as [eventContent](event-render-hooks).
+## 插槽模版
+[插槽模版](https://vuejs.org/guide/components/slots.html#slot-content-and-outlet)可以传递到`FullCalendar`组件中。它们接受插槽，用于所有[内容注入](content-injection)设置，例如[eventContent](event-render-hooks)
+<!--[Slot templates](https://vuejs.org/guide/components/slots.html#slot-content-and-outlet) can be passed to FullCalendar components. They accepts slots for all [content-injection](content-injection) settings such as [eventContent](event-render-hooks).-->
 
 ```html
 <template>
@@ -162,22 +163,27 @@ export default {
 </template>
 ```
 
-All slots are [scoped slots](https://vuejs.org/guide/components/slots.html#scoped-slots) that accept an argument (explicitly named `arg` in the above example).
+所有的插槽都是[作用域插槽](https://vuejs.org/guide/components/slots.html#scoped-slots)，接受一个参数（在上面的示例中被明确命名为`arg`）
+<!--All slots are [scoped slots](https://vuejs.org/guide/components/slots.html#scoped-slots) that accept an argument (explicitly named `arg` in the above example).-->
 
 
-## Calendar API
+## 日历 API
 
-Hopefully you won't need to do it often, but sometimes it's useful to access the underlying `Calendar` object for raw data and methods.
+希望你不需要经常这样做，但是有时候访问`Calendar`底层对象的数据跟方法时很有用。
+<!--Hopefully you won't need to do it often, but sometimes it's useful to access the underlying `Calendar` object for raw data and methods.-->
 
-This is especially useful for controlling the current date. The [initialDate](initialDate) prop will set the *initial* date of the calendar, but to change it after that, you'll need to rely on the [date navigation methods](date-navigation).
+这是对于控制当前日期是特别有用。[initialDate](initialDate)属性用于设置日历的初始日期，但是后期改动的日期时候，将需要依赖[日期导航方法](date-navigation)
+<!--This is especially useful for controlling the current date. The [initialDate](initialDate) prop will set the *initial* date of the calendar, but to change it after that, you'll need to rely on the [date navigation methods](date-navigation).-->
 
-To do something like this, you'll need to get ahold of the component's ref (short for "reference"). In the template:
+要实现这样的操作，你需要获得组件的`ref`("reference"的缩写)。在模版中：
+<!--To do something like this, you'll need to get ahold of the component's ref (short for "reference"). In the template:-->
 
 ```html
 <FullCalendar ref="fullCalendar" :options="calendarOptions" />
 ```
 
-Once you have the ref, you can get the underlying `Calendar` object via the `getApi` method:
+一旦你获取了ref，就可以通过`getApi`方法获取到`Calendar`底层对象：
+<!--Once you have the ref, you can get the underlying `Calendar` object via the `getApi` method:-->
 
 ```js
 let calendarApi = this.$refs.fullCalendar.getApi()
@@ -185,20 +191,23 @@ calendarApi.next()
 ```
 
 
-## Kebab-case in Markup
+## 短横线命名法
 
-Some people prefer to write component names in kebab-case when writing markup. This will work fine:
+一些人喜欢在写组件名时喜欢使用短横线命名法，这样写是没有问题的：
+<!--Some people prefer to write component names in kebab-case when writing markup. This will work fine:-->
 
 ```html
 <full-calendar :options="calendarOptions" />
 ```
 
-However, the properties within `calendarOptions` must have the same names.
+但是，在`calendarOptions`中的属性应该有相同的名字。
+<!--However, the properties within `calendarOptions` must have the same names.-->
 
 
-## FullCalendar Premium
+## FullCalendar高级
 
-How do you use [FullCalendar Premium's](/pricing) plugins with Vue? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. If you plan to use resources, you'll need the `@fullcalendar/resource` package:
+如何在Vue中使用[FullCalendar 高级](/pricing)插件？跟其他的组件没有什么不同。只需要按照上例中使用`dayGridPlugin`方法。如果你需要使用资源，你将需要`@fullcalendar/resource`依赖
+<!--How do you use [FullCalendar Premium's](/pricing) plugins with Vue? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. If you plan to use resources, you'll need the `@fullcalendar/resource` package:-->
 
 ```sh
 npm install --save \
@@ -207,8 +216,8 @@ npm install --save \
   @fullcalendar/resource \
   @fullcalendar/resource-timeline
 ```
-
-Then, initialize your calendar. Make sure to include your [schedulerLicenseKey](schedulerLicenseKey):
+然后，初始化日历。确保引入你的[授权码](schedulerLicenseKey):
+<!--Then, initialize your calendar. Make sure to include your [schedulerLicenseKey](schedulerLicenseKey):-->
 
 ```html
 <script>
