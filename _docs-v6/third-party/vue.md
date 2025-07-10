@@ -245,20 +245,21 @@ export default {
 
 
 ## TypeScript
+对于`@fullcalendar/vue3`，TypeScript集成不需要特别的配置。
+<!--For `@fullcalendar/vue3`, nothing special is needed for TypeScript integration.-->
 
-For `@fullcalendar/vue3`, nothing special is needed for TypeScript integration.
-
-For `@fullcalendar/vue` (Vue 2), it is recommended to use [class-based components](https://github.com/vuejs/vue-class-component). See an <a href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-typescript' class='more-link'>example TypeScript project</a>
+对于`@fullcalendar/vue`（Vue2），推荐使用[基于类的组件](https://github.com/vuejs/vue-class-component)。参考一个<a href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-typescript' class='more-link'>示例TypeScript项目</a>
+<!--For `@fullcalendar/vue` (Vue 2), it is recommended to use [class-based components](https://github.com/vuejs/vue-class-component). See an <a href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-typescript' class='more-link'>example TypeScript project</a>-->
 
 
 ## Vuex
-
-[Vuex](https://vuex.vuejs.org/) is a popular state management library for Vue that works well with the FullCalendar connector. <a href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-vuex' class='more-link'>View an example project</a>
+[Vuex](https://vuex.vuejs.org/) 是一个Vue流行的状态管理库，它能很好的跟FullCalendar连接器配合。参考<a href='h[ttps://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-typescript](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-vuex)' class='more-link'>示例项目</a>
+<!--[Vuex](https://vuex.vuejs.org/) is a popular state management library for Vue that works well with the FullCalendar connector. <a href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-vuex' class='more-link'>View an example project</a>-->
 
 
 ## Nuxt
-
-If you plan to use the [Nuxt] Vue framework, you'll need special configuration. <a class='more-link' href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/nuxt3'>See the example project</a>
+如果你计划使用[Nuxt]Vue框架，你将需要一些特别的配置，<a class='more-link' href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/nuxt3'>查看示例项目</a>
+<!--If you plan to use the [Nuxt] Vue framework, you'll need special configuration. <a class='more-link' href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/nuxt3'>See the example project</a>-->
 
 
 [Vue]: https://vuejs.org/

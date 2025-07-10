@@ -1,5 +1,5 @@
 ---
-title: Plugin Index
+title: 插件目录
 layout: docs-sublanding
 ---
 
